@@ -33,5 +33,5 @@ function buildScript(file) {
   return bundle();
 }
 
-gulp.task('default', () => buildScript('./lib/agent.js', false)); 
+gulp.task('default', () => buildScript('./index.js', false)); 
 
