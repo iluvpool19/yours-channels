@@ -7,7 +7,6 @@
  */
 global.YoursChannels = {};
 
-
 global.YoursChannels.Agent = require('./lib/agent.js');
 global.YoursChannels.Channel = require('./lib/channel.js');
 global.YoursChannels.Consts = require('./lib/consts.js');
@@ -15,3 +14,4 @@ global.YoursChannels.Output = require('./lib/output.js');
 global.YoursChannels.Wallet = require('./lib/wallet.js');
 
 module.exports = YoursChannels;
+
