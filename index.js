@@ -5,14 +5,13 @@
  *
  * let Agent = require('yours-channels').Agent
  */
+global.YoursChannels = {};
 
-const lib = {};
+global.YoursChannels.Agent = require('./lib/agent.js');
+global.YoursChannels.Channel = require('./lib/channel.js');
+global.YoursChannels.Consts = require('./lib/consts.js');
+global.YoursChannels.Output = require('./lib/output.js');
+global.YoursChannels.Wallet = require('./lib/wallet.js');
 
-lib.Agent = require('./lib/agent.js');
-lib.Channel = require('./lib/channel.js');
-lib.Consts = require('./lib/consts.js');
-lib.Output = require('./lib/output.js');
-lib.Wallet = require('./lib/wallet.js');
-
-module.exports = lib;
+module.exports = YoursChannels;
 
